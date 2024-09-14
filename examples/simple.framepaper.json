@@ -1,0 +1,13 @@
+{
+    "models": [
+      {
+        "name": "User",
+        "fields": {
+          "name": "string",
+          "email": "string",
+          "password": "string"
+        }
+      }
+    ]
+  }
+  

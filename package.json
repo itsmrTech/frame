@@ -1,0 +1,36 @@
+{
+    "name": "frame",
+    "version": "0.0.1",
+    "description": "A compiler that generates NestJS and Mongoose APIs from JSON definitions (FramePaper).",
+    "main": "dist/index.js",
+    "scripts": {
+        "build": "tsc",
+        "start": "npx ts-node src/index.ts",
+        "lint": "eslint './src/**/*.{ts,js}'"
+    },
+    "keywords": [
+        "typescript",
+        "compiler",
+        "nestjs",
+        "mongoose",
+        "json",
+        "code-generation"
+    ],
+    "author": "Mohammad Tahvildary",
+    "license": "MIT",
+    "dependencies": {
+        "handlebars": "^4.7.7"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/itsmrTech/frame.git"
+    },
+    "devDependencies": {
+        "@types/node": "^20.16.5",
+        "eslint": "^8.35.0",
+        "eslint-config-airbnb-typescript": "^17.0.0",
+        "prettier": "^2.7.0",
+        "ts-node": "^10.9.0",
+        "typescript": "^5.0.0"
+    }
+}

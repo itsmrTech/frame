@@ -1,0 +1,18 @@
+import { Injectable } from '@nestjs/common';
+import { InjectModel } from '@nestjs/mongoose';
+import { Model } from 'mongoose';
+import { {{name}} } from './{{name}}.model';
+
+@Injectable()
+export class {{name}}Service {
+  constructor(@InjectModel({{name}}.name) private {{name}}Model: Model<{{name}}>) {}
+
+  async create(create{{name}}Dto: Create{{name}}Dto): Promise<{{name}}> {
+    const created{{name}} = new this.{{name}}Model(create{{name}}Dto);
+    return created{{name}}.save();
+  }
+
+  async findOne(id: string): Promise<{{name}} | null> {
+    return this.{{name}}Model.findById(id).exec();
+  }
+}

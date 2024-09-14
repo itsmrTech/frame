@@ -1,0 +1,33 @@
+{
+    "compilerOptions": {
+      "target": "ES6",                                // Targets ECMAScript 6 for async/await and other modern features
+      "module": "CommonJS",                           // Use CommonJS for Node.js compatibility
+      "strict": true,                                 // Enable all strict type-checking options
+      "esModuleInterop": true,                        // Ensure interoperability between CommonJS and ES modules
+      "skipLibCheck": true,                           // Skip type checking for library files (improves performance)
+      "forceConsistentCasingInFileNames": true,       // Ensure consistent casing in file imports
+      "outDir": "./dist",                             // Directory to output the compiled code
+      "rootDir": "./src",                             // Specify root directory of the input files
+      "moduleResolution": "node",                     // Node module resolution
+      "resolveJsonModule": true,                      // Allow importing of .json files
+      "isolatedModules": true,                        // Ensure each file can be safely transpiled independently
+      "noImplicitAny": true,                          // Raise errors on expressions and declarations with an `any` type
+      "noImplicitThis": true,                         // Ensure `this` is typed properly
+      "strictNullChecks": true,                       // Ensure strict null checks
+      "strictFunctionTypes": true,                    // Check function types strictly
+      "strictBindCallApply": true,                    // Ensure strict checking of `bind`, `call`, and `apply` methods
+      "noUnusedLocals": true,                         // Report errors on unused local variables
+      "noUnusedParameters": true,                     // Report errors on unused function parameters
+      "noFallthroughCasesInSwitch": true,             // Report errors for fallthrough cases in switch statements
+      "noEmitOnError": true,                          // Prevent emission of code if there's a TypeScript error
+      "incremental": true                             // Enable incremental compilation to improve performance
+    },
+    "include": [
+      "src/**/*"                                      // Include all source files in the project
+    ],
+    "exclude": [
+      "node_modules",                                 // Exclude node_modules from being compiled
+      "dist"                                          // Exclude the output directory
+    ]
+  }
+  

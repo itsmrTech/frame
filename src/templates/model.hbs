@@ -1,0 +1,12 @@
+import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
+import { Document } from 'mongoose';
+
+@Schema()
+export class {{name}} extends Document {
+  {{#each fields}}
+  @Prop()
+  {{this}}: string;
+  {{/each}}
+}
+
+export const {{name}}Schema = SchemaFactory.createForClass({{name}});
